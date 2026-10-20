@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153f34"><meta name="description" content="On-Ground call centre workspace demo — leads, calling, calendar and team pulse."><title>On-Ground.ai — Call Centre Workspace</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">og</span><span>On-Ground<span class="muted">.ai</span></span></div>
+    <div class="workspace"><span class="online-dot"></span> Retail workspace <span class="chev">⌄</span></div>
+    <div class="nav-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+      <button class="nav-item" data-page="plan"><span>◷</span> Plan</button>
+      <button class="nav-item" data-page="calendar"><span>▦</span> Calendar</button>
+      <button class="nav-item" data-page="pulse"><span>◉</span> Pulse <span class="nav-count">3</span></button>
+    </nav>
+    <div class="nav-label">CALL CENTRE</div>
+    <nav>
+      <button class="nav-item" data-page="calls"><span>↗</span> Calls to make</button>
+      <button class="nav-item" data-page="incoming"><span>↙</span> Incoming <span class="nav-count alert">4</span></button>
+      <button class="nav-item" data-page="recent"><span>◴</span> Recent</button>
+      <button class="nav-item" data-page="leads"><span>♧</span> Leads</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="avatar">GG</div><div><strong>Girish G.</strong><small>Call centre agent</small></div><span class="chev">•••</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="crumb">Workspace <span>/</span> <strong id="crumb">Dashboard</strong></div><div class="top-actions"><span class="today-label" id="todayLabel"></span><button class="icon-btn" title="Notifications">♧<i></i></button><button class="icon-btn" title="Help">?</button><div class="avatar small">GG</div></div></header>
+    <div class="content">
+      <div id="pageContent"></div>
+    </div>
+    <footer class="demo-strip"><span class="demo-dot"></span><strong>DEMO WORKSPACE</strong><span>Sample data · Changes stay in this browser session</span><button id="quickCall">☎ Quick call</button></footer>
+  </main>
+</div>
+<div id="modalRoot"></div>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
